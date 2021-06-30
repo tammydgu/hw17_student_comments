@@ -1,0 +1,278 @@
+/* I definitely see varying font sizes in your code, one great resource to check out is type-scale.com. This resource will help you define heading and body paragraph sizes (typically we use major or minor third unless you want heavy graphics) */
+* {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .primary-color {
+    color: #e99922;
+  }
+  
+  .heading {
+    font-size: 96px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-shadow: 8px 0px #e99922;
+    height: 120px;
+  }
+  
+  .text-shadow {
+    text-shadow: 5px 0px #e99922;
+  }
+  
+  .sub-heading {
+    font-size: 56px;
+    height: 64px;
+    letter-spacing: 3px;
+    font-weight: 800;
+  }
+  
+  .divider {
+    background-color: #b9b8b8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 5px;
+  }
+  
+  .profile-pic {
+    height: 550px;
+    width: 525px;
+  }
+  
+  .absolute-text {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+  }
+  
+  .go-down-btn {
+    width: 47px;
+    height: 76px;
+    position: absolute;
+    top: 275px;
+    right: 0;
+    background: #c4c4c4;
+    border: 0 !important;
+  }
+  
+  .go-top-btn {
+    width: 47px;
+    height: 115px;
+    position: absolute;
+    top: 275px;
+    right: 0;
+    background: #c4c4c4;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .section-heading {
+    font-size: 96px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-shadow: 8px 0px #e99922;
+  }
+  
+  .quote {
+    color: #fafafa;
+    font-size: 56px;
+    font-weight: 800;
+  }
+  
+  .text-quote {
+    font-family: Sedan SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+  }
+  
+  .bg-primary {
+    background-color: #e99922;
+  }
+  
+  .bg-secondary {
+    background-color: #eeeeee;
+  }
+  
+  .divider-white {
+    background-color: #fafafa;
+    height: 2px;
+    width: 50%;
+  }
+  
+  .social-links {
+    color: #e99922;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .container {
+    width: 100%;
+  }
+
+
+  /* media queries are a great way to explore responsive design without using bootstrap. I am curious about your sizings here (typically we have 2, one for mobile and one for tablet). Another thing I would definitely encourage you to explore is additional css stylings based on how you want your mobile and tablet designs to behave. For instance, at a min-width of 640px, does your profile image drop below your text? Does the font resize to something smaller? */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+  
+  /* section 1 */
+  .banner-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .list-none {
+    list-style-type: none;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .desc {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+    padding-left: 0.5rem;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+  
+  .fun-desc {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+  
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* section 2 */
+  .section-2 {
+    padding: 5rem 4rem;
+    position: relative;
+  }
+  
+  .separated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* section-3 */
+  .section-3 {
+    background-color: #292d37;
+    padding: 3rem 2rem;
+  }
+  
+  /* section-4 */
+  .section-4 {
+    padding: 8rem 2rem;
+  }
+  
+  .primary-box {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .secondary-box {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .black-box {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #000;
+  }
+  
+  .work-text {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .work-subtext {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
+  
+  .footer {
+    padding: 0 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 8rem;
+    background-color: #292d37;
+  }
+  
+  .footer-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.025rem;
+  }
+  
+  .ending-quote {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+  }
+  
