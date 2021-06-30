@@ -1,0 +1,189 @@
+.navbar {
+  padding-top: 2%;
+}
+.navbar .navbar-brand {
+  color: #505050;
+  font-size: 3vh;
+  font-family: 'Futura', 'san-serif';
+  font-weight: 500;
+}
+.navbar ul a {
+  color: #505050;
+  font-size: 2vh;
+  font-family: 'futura', 'san-serif';
+}
+.navbar ul a:hover {
+  background-color: #fdf5f7;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* be careful with making your min-height and height equal to 100%. this makes it so that your title section takes up the entire screen height and more. height:auto is enough for this. I deleted min-height and height:100% for you */
+.container {
+  height: auto;
+  width: 95vw;
+}
+
+.btn-default a {
+  color: #505050;
+  text-decoration: none;
+}
+.btn-default:hover {
+  background-color: #fdf5f7;
+  border-color: #BD6B73;
+}
+
+#work-image-grid {
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+.col-lg-6 {
+  padding: 3%;
+}
+
+.thumbnailimg:hover img {
+  opacity: 0.85;
+}
+.footer {
+  margin-top: 0;
+}
+.page-footer {
+  text-align: center;
+  justify-content: center;
+  background-color: #505050;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.txt-row {
+  padding-top: 1.5%;
+}
+.txt-row h2,p {
+  color: white;
+  font-family: 'helvetica', 'san-serif';
+}
+.txt-row h2 {
+  font-size: 1.5em;
+}
+.txt-row p {
+  font-weight: 100;
+}
+.txt-row a {
+  color: #f6d6e0;
+}
+.link-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 28%;
+  padding-right: 28%;
+  padding-top: 2.5%;
+}
+ #work-image-grid figcaption {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 8%;
+}
+#work-image-grid figure .h1 {
+  font-family: 'helvetica', 'san-serif';
+  font-size: 1.5em;
+  color: #505050;
+  font-weight: 400;
+  margin-top: 8%;
+  padding-left: 0.5%;
+}
+#work-image-grid figure .h2 {
+  font-family: 'helvetica', 'san-serif';
+  font-size: 1.1em;
+  color: #606060;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-top: 3%;
+  margin-bottom: 7%;
+  letter-spacing: 0.06em;
+  padding-left: 0.5%;
+}
+#work-image-grid figcaption a {
+  text-decoration: none;
+  font-family: 'neue hlvetica', 'san-serif';
+  font-size: 1.1em;
+  color: #606060;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  padding-top: 2%;
+  padding-bottom: 0.8%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  border-bottom: 0.1em solid #F6D6E0;
+}
+#work-image-grid figcaption a:hover {
+  background-color: #FAE7E9;
+  text-decoration: none;
+  color: #505050;
+}
+#work-image-grid .pistachio:hover {
+  background-color: #D9F6F1;
+}
+
+#work-image-grid .pistachio {
+  border-bottom: 0.1em solid #D9F6F1;
+}
+.img{
+ position: relative;
+ width: auto;
+ 
+}
+.image__img{
+ display: block;
+ width: 100%;
+}
+.image__overlay{
+position:absolute;
+ top: 0;
+ left: 0;
+ width:100;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.5);
+ color: #ffffff;
+ font-family:'helvetica', 'san-serif';
+ display: flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ opacity: 0;
+ transition: opacity 0.25s;
+
+}
+.image__overlay--blur{
+ backdrop-filter: blur(5px);
+}
+.image__overlay > * {
+ transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.image__overlay:hover{
+ opacity: 1;
+ }
+.image__overlay:hover > * {
+ transform: translateY(0);
+}
+
+/* you have a typo here in .image_title */
+.image__titlw{
+ font-size: 2em;
+ font-weight: bold;
+ }
+
+.image__description{
+ font-size: 1.5em;
+ margin-top:2em;
+}
+.projectthumbnail {
+  box-shadow: 0.9em 0.9em 0.5em -0.8em #c5c5c5, -0.9em 0.9em 0.5em -0.8em #c5c5c5;
+}
