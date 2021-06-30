@@ -1,0 +1,121 @@
+/* added sction and intro class elements below */
+section {
+  padding: 50px;
+}
+.intro {
+  padding-left: 50px;
+}
+.main-nav{
+  font-size: 35px;
+   margin: 10px;
+   color: white; 
+   width:98%;
+   position: absolute;
+   top: 45px; left: 20px;
+   font-family: 'roboto', sans-serif;
+   font-weight: bold;
+}
+   .menu{
+    float: right;
+    margin: 0 15px;
+
+  }
+  
+  .titel{
+    color:#C00000;
+    font-size: 45px;
+    margin-top: 50px;
+  
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .subtext1{
+    color:#4F4F4F;;
+    font-size: 30px;
+
+
+
+    font-family: 'Montserrat', sans-serif;
+ }
+ .subtext2{
+  color:#4F4F4F;
+  font-size: 30px;
+  line-height: 30px;
+
+
+  margin-top: 26px;
+  font-family: 'Montserrat', sans-serif;
+ }
+ /* instead of using padding to get your elements where you want them, I created another div statement with the class aboutme-section. This allowed me to create a flexbox for your image and your about me text so that i could align them next to each other without using excessive margins or padding */
+ .aboutme-section {
+   display: flex;
+   align-items: top;
+
+ }
+
+ /* deleted a lot of padding/margin elements here */
+.aboutme{
+line-height: 50px;
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+color: #4F4F4F;
+
+}
+.Myimage {
+float: left;
+padding-right: 50px;
+
+}
+ 
+button{
+  background-color: #1294D4;
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+/* I made your banner class the parent with position: relative and made your textbaner class position:absolute. I also increased the textbaner class width to 100% to center it on the page */
+.banner{
+  text-align: left;
+  position: relative;
+  align-items: center;
+  
+  }
+  .Textbaner{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #FFCC4D;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+  }
+  /* be careful with postion: absolute - i removed postion: absolute from both footer1 and footer2. this styling element was preventing you from styling in the way that you wanted to in your design. Also remember that when you use position absolute, you're using it in conjunction with position: relative. Position: relative is the parent and position: absolute is the child. If you don't have position: relative anywhere, your position absolute will not behave like you want it to! */
+    .footer1{
+      color:#C00000;
+
+      left: 3%;
+      padding-left: 50px;
+      padding-bottom: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      font-weight: medium;
+    }
+    .footer2{
+      color:#4F4F4F;
+      left: 3%;
+      padding-left: 50px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 28px;
+    }
+.copyright{
+  color:#4F4F4F;
+  position: absolute; 
+left: 45%;
+}
+  
+
