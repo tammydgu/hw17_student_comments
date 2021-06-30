@@ -1,0 +1,76 @@
+
+/* global stylesles */
+*{
+    padding:0;;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    /* 10px is a bit small for accessible web and mobile design. I would encourage you to use type-scale.com as a tool for figuring out font-sizes for your headings and body paragraph text. Typically, body text starts at 16px */
+    font-size: 10px;
+}
+body{
+    background-color: #FFFDF8;
+}
+/* navigation style */
+header{
+    border-bottom: 1px solid;
+}
+.logo{
+    width:35%;
+    padding:1%
+}
+
+.navbar{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    align-items:center;
+}
+
+/* it looks like you used the justify-content:space-around style element here which is great! However, if you'd like to get the code to look more like your design, I would experiment with float:right and then utilize padding for individual li elements. I demonstrated how that would look in your code below. Feel free to view this by downloading and opening this index file your browser.*/
+.nav-items{
+    display:flex;
+    float: right;
+    list-style-type: none;
+    padding: 1%;
+}
+.nav-list {
+    padding-right: 20px;
+}
+
+/* hero section */
+#hero{
+    height: 100%;
+    width:100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* now that you've learned bootstrap, a good way to tackle this section where you have an image on the right and text on the left is to use css grids and columns! but good use of flex here :) */
+#hero .container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.headshot{
+    height: 450px;
+}
+
+.footerbar{
+    border-top: 1px solid;
+    display:grid;
+    align-items:center;
+}
+
+/* if you'd like to get your code to look like your design, I would encourage you to explore float:left similar to your global nav :) Made some changes here for you to take a look at. */
+.footeritems{
+    display:flex;
+    float: left;
+    list-style-type: none;
+}
+.footer-list {
+    padding-left: 20px;
+}
+
+
