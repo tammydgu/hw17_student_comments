@@ -1,0 +1,70 @@
+body {
+    /* "resetting the block model" and adding  */
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    /*  */
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+nav, header, section, div, p, ul {
+    /* giving everything a border */
+    /* border: 1px solid  brown; */
+}
+
+.inline-block {
+    /* border for the above element for visibiliy */
+    /* border: 1px solid cyan;  */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 22%;
+    padding: 1%;
+    /* i've added this float:right to your logo to place it more evenly in your nav bar */
+    float: right;
+    /* text-align: right; */
+}
+
+nav {
+    /* your nav typically spans the entire width so i made your width 100% */
+    width: 100%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+    list-style-type: none;
+    /* i've added some padding and float:left to your nav ul container so that your navigation sits on the left opposite your logo. you can also play around with having it in the center */
+    padding-left: 30px;
+    float: left;
+}
+
+li {
+    display: inline-block;
+    /* added padding between your elements */
+    padding-left: 20px;
+}
+
+.heroText {
+    height: 600px;
+    padding: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 45px;
+}
+
+#heroName {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
