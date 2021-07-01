@@ -1,0 +1,132 @@
+/*this is Step 5/Code navbar*/
+/* .inline-block { */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+/* } */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* added width:100% in order to get your elements fully to the right */
+    width: 100%;
+   
+}
+
+.logo {
+    padding: 2%;
+    /* added display:flex and align-items:center */
+    display: flex;
+    align-items: center;
+    /* we don't need text-align: center; */
+    position: static;
+    /* added width:100% to allow your name to extend the full width without wrapping */
+    width: 100%; 
+}
+/* added .logo img to put some padding between your logo and your name */
+.logo img {
+    padding-right: 20px;
+}
+
+.navigation {
+    /* I want my top nav items (Home/Design/About) to be aligned right, but there is some weirdness happening. It looks like the ul tag is stuck in its own section and so I cant move it to the right edge (resolved - see changes and updated index file in browser) */
+    display:flex;
+    flex-flow: row nowrap;
+    color: #FCFAE6;
+}
+
+ul {
+    width: 100%;
+   margin-left: auto; 
+   padding: 40px;
+   font-family: workSans;
+   font-size: 24px;
+   color: #FCFAE6;
+   text-align: right;
+   align-self: flex-end;
+}
+
+.heroImg {
+    display:grid;
+    grid-template-columns: 60% 40%;
+    padding: 20px;
+    padding-top: 40px;
+}
+.nav-list {
+    display: inline-block;
+}
+
+#myFace {
+    /* I wanted to put a border around just my img, but it bordered the entire box that my img lives in.. merp
+    border-style: solid;
+    border-width: thin;
+    border-color: #FFFFFF;
+    */
+    /* the way to do this is by doing #myFace img - see below */
+}
+/* this is to put a border around your image */
+#myFace img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.content {
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: workSans;
+}
+
+h2 {
+    font-family: workSans;
+    color: #FCFAE6; /* my white */
+    font-size: 52px;
+    margin-top: unset;
+}
+
+p {
+    font-family: sourceSans;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+
+button {
+    padding: 12px;
+    font-family: sourceSans;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #1E2431; /* my black */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #FF9153; /* nara */
+  color: white;
+}
+
+footer {
+    align-self: flex-end;
+    padding-top: 60px;
+    width: auto;
+    height: 120px;
+    background-color: #252D3D; /* main navy */
+}
+
+body {
+    background-color: #252D3D;
+}
+
+@font-face {
+    font-family: sourceSans;
+    src: url(typeface_source_sans_pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(typeface_work_sans/WorkSans-Medium.ttf);
+}
