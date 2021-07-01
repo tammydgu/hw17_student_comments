@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="container">
+    <div class="overlay">
+      <!-- you accidentally started your div statement with a closing div here so i fixed that for you -->
+        <div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://images.all-free-download.com/footage_preview/webm/clouds_timelapse_67.webm" type="video/mp4" style="width:100%;">
+          </video>  
+        </div>
+      
+      <div class="top-left">
+        <h1>David Hopper</h1>
+        <h3>UX/UI Design</h3>
+        <h2>Curator of Experiences</h2>
+      </div>
+      <div><img class="icon" src="images/Vector 72.png" alt="logo icon seven rainbow"></div>
+      <div><img class="image" src="images/methinking.png" alt="picture of me thinking"></div>
+      <div class="centered">Creating a good design is like creating good music , it involves interactions on so many levels, and its proof can often be found in its outcome.</div>
+    </div>
+  <!-- had some extra closing div statements on the bottom that i deleted (make sure that all your div statements have only one opening and one closing tag! It can be difficult to keep track the longer your code gets so it's always good to utilize tabs and spacing to idenitfy parent and child elements. I fixed some of your spacing above as an example.-->
+      
+</header>
+
+
+<div class="nav">
+  <!-- curious what you were trying to create structure for with checkbox here -->
+  <input type="checkbox" id="nav-check">
+   <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="https://www.linkedin.com/in/david-hopper-38481697/" target="_blank">About</a>
+    <a href="https://www.linkedin.com/in/david-hopper-38481697/" target="_blank">Contact</a>
+    <a href="https://www.linkedin.com/in/david-hopper-38481697/" target="_blank">Resume</a>
+    <a href="https://www.linkedin.com/in/david-hopper-38481697/" target="_blank">Works</a>
+  </div>
+</div>
+
+ <section class="section">
+      <div>
+        <h3 class="sectionalt">Kumusha<h3>
+        <h5 class="sectionalt">Non Profit Case Study and Redesign<h5>
+      <div>
+      <div><!-- images of mock ups here--><div>
+      <div><!-- images of mock ups here--><div>
+    <!-- so the reason why your sections aren't being created like you're intending is because you have <section> as the closing tag instead of </section>. You're missing the / - i've corrected them down below.  -->
+      </section>
+    
+    <section class="section">
+      <div>
+        <h3 class="sectionalt">Feather<h3>
+        <h5 class="sectionalt">Mobile Wellness App<h5>
+      <div>
+      <div><!-- images of mock ups here--><div>
+      <div><!-- images of mock ups here--><div>
+      </section>
+    
+  <section>
+      <ul class="topnav">
+       <li class="topspace">Storyboards<li> 
+       <li class="topspace">Presentations<li>
+       <li class="topspace">Lines and Sounds<li>
+       </ul>
+  </section>
+
+  <!-- noticing that a lot of your closing tags are missing the / you have a few div closing tags missing the / below -->
+    
+<div class="footer">
+  
+    <div class="footerstyle">Connect<div>
+      <div class="footerstyle">
+      <a ref="iriebassist@icloud.com">iriebassist@icloud.com</a>         <div>
+      <div class="footerstyle"><a ref="https://www.linkedin.com/in/david-hopper-38481697/">linkedin</a>
+      </div>
+    <div class="footerstyle">510-705-3525<div>
+    <div class="footerstyle">David Hopper Copyright 2021<div>
+  </div>
+  
+</body>
+</html>
