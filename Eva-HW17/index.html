@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  
+
+        <title>
+            Eva Ratcliffe
+        </title>
+    </head>
+
+    <body>
+
+        <!--Navigation-->
+        <div class="menu">
+            <a href="/mywork" class="menu-link-block w-inline-block"><div class="text-block">My work</div></a>
+            <a href="/fun" class="menu-link-block w-inline-block"><div class="text-block">Fun</div></a>
+            <a href="/about" class="menu-link-block w-inline-block"><div class="text-block">About</div></a>
+            <a href="/contact" class="menu-link-block w-inline-block"><div class="text-block">Contact</div></a>
+        </div>
+
+        <!--Main Content-->
+        <!-- Header -->
+        <header> 
+            <div class="hero-image">
+              <div class="header">
+                <h1>Eva Hazel Ratcliffe</h1>
+                <p>UX Designer</p>
+                <button>Get to know me</button>
+                <img class="me" src="./Images/me.png" alt="Eva Hazel Ratcliffe" width="200" height="200">
+              </div>
+            </div>
+        </header>
+       <section class="portfolio-section">
+        <!--Girls Who Brunch-->
+        <div class="portfolio-img-container">
+          <img class= "portfolio-img" src="./Images/GirlsWhoBrunch.svg">
+          </div>
+          <div class="portfolio-text-container">
+            <h4 class= "portfolio-header"> Girls Who Brunch</h4>
+            <p class="portfolio-text">
+              "A Responsive Redesign"
+            </p>
+            <button class="learn-more"> Learn More </button>
+          </div>
+         </div>
+         </div>
+         <style>
+         .res-circle {
+          /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+          width: 20%;
+          border-radius: 50%;
+          
+          /* (B) BACKGROUND COLOR */ 
+          background: #BACBBE;
+          
+          /* (C) NECESSARY TO POSITION TEXT BLOCK */
+          position: relative;
+          line-height: 0;
+        }
+        
+        /* (D) MATCH HEIGHT */
+        .res-circle::after {
+          content: "";
+          display: block;
+          padding-bottom: 100%;
+        }
+        
+        /* (E) TEXT BLOCK */
+        .circle-txt {
+          /* (E1) CENTER TEXT IN CIRCLE */
+          position: absolute;
+          bottom: 60%;
+          width: 100%;
+          text-align: center; 
+          /* (E2) THE FONT - NOT REALLY IMPORTANT */
+          font-family: Cormorant;
+          font-weight: bold;
+        }
+        .subheading {       
+          position: absolute;
+          bottom: 40%;
+          width: 100%;
+          text-align: center; 
+          /* (E2) THE FONT - NOT REALLY IMPORTANT */
+          font-family: Cormorant;
+          font-weight: regular; }
+          .learn-more {
+            position: absolute;
+          bottom: 20%;
+          width: 50%;
+          text-align: center; 
+          /* (E2) THE FONT - NOT REALLY IMPORTANT */
+          font-family: Cormorant;
+          font-weight: regular; } 
+        p {
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+        }</style>
+        </section>
+       <!--My Responsive Circle-->
+    <!-- you have an extra </head> closing tag here - i made it into a comment for you so it doesn't impact your code. -->
+    <!-- </head> -->
+    <!-- you also have an extra <body> tag here, making it into a comment so it doesn't impact your code -->
+    <!-- <body> -->
+      <div class="res-circle">
+        <div class="circle-txt">Life En Route</div>
+        <p class="subheading"> A Vanlife Mobile App</p>
+        <button class="learn-more"> Learn More </button>
+      </div>
+
+        <!--Life En Route-->
+        <div class="portfolio-img-container">
+          <img class= "portfolio-img" src="Images/LifeEnRoute1.svg">
+          </div>
+          <div class="portfolio-text-container">
+            <h4 class= "portfolio-header"> Life En Route</h4>
+            <p class="portfolio-text">
+              "A Vanlife Travel App"
+            </p>
+            <button class="learn-more"> Learn More </button>
+          </div>
+         </div>
+         </div>
+        <!--Department of Homeland Security-->
+        <div class="portfolio-img-container">
+          <img class= "portfolio-img" src="./Images/DHS.svg">
+          </div>
+          <div class="portfolio-text-container">
+            <h4 class= "portfolio-header"> Department of Homeland Security</h4>
+            <p class="portfolio-text">
+              "A Responsive Redesign"
+            </p>
+            <button class="learn-more"> Learn More </button>
+          </div>
+         </div>
+         </div>
+      </section>
+        <!-- Footer -->
+        <footer>
+            <section>
+                <ul>
+                    <li class=inline-block> <img src="./Images/Insta.png" width="20" height="20"> <a href="instagram.com/eva_hazel"> </a> </li>
+                    <li class=inline-block> <img src="./Images/linkedin.png" width="20" height="20"> <a href="https://www.linkedin.com/in/eva-ratcliffe"> </a> </li> </li>
+                    <li class=inline-block> <img src="./Images/gmail.png" width="20" height="20"> <a href="mailto:ehrtclff@gmail.com"> </a> </li>
+                    <li class=inline-block> <a href="resume.pdf">Resume</a> </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
