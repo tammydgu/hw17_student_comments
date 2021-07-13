@@ -1,0 +1,90 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*start of reusable*/
+.center{
+  text-align: center;
+}
+/*end of reusable*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7B9081;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    text-decoration: none;
+  }
+  .icons{
+      float: right;
+  }
+  li a:hover {
+    background-color: #E9A39A;
+  }
+  
+  /* you don't need this section if you use background-image: url(); for the same section as your text */
+  /* .heroimage { */
+    /* height: 50%; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* position: relative; */
+  
+  /* } */
+  
+  .hero-text {
+    text-align: left;
+    /* removed position absolute here to get the text on your image */
+    /* position: absolute; */
+    top: 95%;
+    left: 3%;
+    transform: translate(none);
+    color: #073B39;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* instead of using a separate div above, you can do background-image:url(); in order to get image behind text */
+    background-image: url(phone.png);
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    }  
+
+ 
+  
+
+    .container-flex{
+      display: flex;
+      flex-direction: row;
+      background-color: yellow;
+      padding: 10px;
+      justify-content: center;
+    }
+.process-flex-box{
+  margin: 10px;
+    height: 200px;
+    width: 400px;
+    background-color: tomato;
+
+}
+
+    footer{
+        display: center;
+        text-align: center;
+        background-color:#7B9081;
+        color: white;
+    }
